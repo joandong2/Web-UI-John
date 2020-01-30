@@ -1,0 +1,27 @@
+// Mixins in here
+// Mixins Here
+.flex(@justify: flex-start, @align : flex-start, @direction: row) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+    flex-direction: @direction;
+}
+
+.button(@background-color, @radius, @color) {
+    background-color: @background-color;
+    border-radius: @radius;
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    color: @color;
+    padding: 5px 25px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.4rem;
+    transition: all .2s;
+
+    &:hover {
+        background-color: @color;
+        color: @background-color;
+        border: 1px solid @background-color;
+    }
+}
