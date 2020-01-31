@@ -26,6 +26,13 @@
   font-display: swap;
   src: local('Nunito ExtraBold'), local('Nunito-ExtraBold'), url(https://fonts.gstatic.com/s/nunito/v12/XRXW3I6Li01BKofAksCUYevN.ttf) format('truetype');
 }
+@font-face {
+  font-family: 'Bree Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Bree Serif Regular'), local('BreeSerif-Regular'), url(https://fonts.gstatic.com/s/breeserif/v9/4UaHrEJCrhhnVA3DgluA96rp4g.ttf) format('truetype');
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -191,7 +198,6 @@ p {
   padding-bottom: 10px;
 }
 a {
-  line-height: 1.8;
   font-size: 1.4rem;
   color: #444545;
 }
@@ -225,28 +231,101 @@ header nav a:hover {
 }
 header .call-to-action {
   margin-top: 6px;
-  background-color: #00887A;
-  border-radius: 3;
-  -webkit-border-radius: 3;
-  -moz-border-radius: 3;
+  background: #00887A;
+  border: 1px solid #FFFFFF;
   color: #FFFFFF;
-  padding: 5px 25px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  padding: 10px 45px;
   text-decoration: none;
   text-align: center;
   font-size: 1.4rem;
-  transition: all 0.2s;
+  transition: all 0.3s;
+  padding: 10px 25px;
 }
 header .call-to-action:hover {
-  background-color: #FFFFFF;
+  background: #FFFFFF;
   color: #00887A;
   border: 1px solid #00887A;
 }
 .footer {
   width: 100%;
   background: #00887A;
+  padding-top: 15px;
 }
-.footer p {
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.footer .container p {
+  color: #FFFFFF;
+}
+.footer .container .social-medias a {
+  color: #FFFFFF;
+  font-size: 1.8rem;
+  margin-right: 10px;
+}
+.banner {
+  /* The image used */
+  background: linear-gradient(90deg, rgba(20, 20, 20, 0.8) 0%, rgba(0, 0, 0, 0.5)), url(/img/cover.jpg);
+  /* Set a specific height */
+  min-height: 500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banner .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #FFFFFF;
+  height: 51.6vh;
   text-align: center;
-  font-size: 1.6rem;
-  padding: 20px;
+}
+.banner .container h1 {
+  font-size: 4.6rem;
+}
+.banner .container a {
+  background: #00887A;
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  padding: 10px 45px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.4rem;
+  transition: all 0.3s;
+}
+.banner .container a:hover {
+  background: #FFFFFF;
+  color: #00887A;
+  border: 1px solid #00887A;
+}
+.main-section .box-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: row;
+  margin: 40px 0;
+}
+.main-section .box-section .box {
+  width: 31.5%;
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.main-section .box-section .box i {
+  font-size: 4.8rem;
+  margin-bottom: 20px;
 }
