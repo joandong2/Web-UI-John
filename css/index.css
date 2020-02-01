@@ -338,6 +338,10 @@ header .container .intro .buttons .reverse-button:hover {
 .footer .container .social-medias img {
   max-height: 35px;
 }
+.main-section h1,
+.main-section h3 {
+  color: #de9151;
+}
 .main-section .introduction {
   display: flex;
   justify-content: space-between;
@@ -404,7 +408,15 @@ header .container .intro .buttons .reverse-button:hover {
   color: #de9151;
 }
 .team-profile {
-  margin-top: 80px;
+  margin-top: 40px;
+}
+.team-profile h1,
+.team-profile h3 {
+  color: #de9151;
+}
+.team-profile h1 {
+  text-align: center;
+  margin-bottom: 50px;
 }
 .team-profile .container {
   display: flex;
@@ -414,7 +426,7 @@ header .container .intro .buttons .reverse-button:hover {
   flex-wrap: wrap;
 }
 .team-profile .container .box {
-  width: 31.5%;
+  width: 24.6%;
   margin-bottom: 30px;
   display: flex;
   justify-content: center;
@@ -422,11 +434,21 @@ header .container .intro .buttons .reverse-button:hover {
   flex-direction: column;
   text-align: center;
 }
+.team-profile .container .box p.name {
+  padding-bottom: 0;
+  font-weight: 800;
+  color: #de9151;
+  line-height: 1.3rem;
+}
 .team-profile .container .box .image-border {
   border: 10px solid #00887A;
   background: #00887A;
   margin-bottom: 20px;
+  width: 100%;
 }
 .team-profile .container .box .image-border img {
-  margin-top: -40px;
+  margin-top: -20px;
+  max-height: 200px;
+  width: 100vh;
+  height: 100vh;
 }

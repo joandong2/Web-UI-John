@@ -1,23 +1,43 @@
 .team-profile {
-    margin-top: 80px; 
+    margin-top: 40px; 
+
+    h1, h3 {
+        color: @persian-orange;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 50px;
+    }
 
     .container {
         .flex(space-between);
         flex-wrap: wrap;
         
         .box {
-            width: 31.5%;
+            width: 24.6%;
             margin-bottom: 30px;
             .flex(center,center,column);
             text-align: center;
+
+            p.name {
+                padding-bottom: 0;
+                font-weight: 800;
+                color: @persian-orange;
+                line-height: 1.3rem;
+            }
 
             .image-border {
                 border: 10px solid @teal-green;
                 background: @teal-green;
                 margin-bottom: 20px;
+                width: 100%;
 
                 img {
-                    margin-top: -40px;
+                    margin-top: -20px;
+                    max-height: 200px;
+                    width: 100vh;
+                    height: 100vh;
                 }
             }
         }
