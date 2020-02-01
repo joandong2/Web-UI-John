@@ -212,41 +212,101 @@ img {
 }
 header {
   padding: 20px 0 10px;
+  background: linear-gradient(90deg, rgba(20, 20, 20, 0.8) 0%, rgba(0, 0, 0, 0.5)), url(/img/cover.jpg);
+  /* Set a specific height */
+  min-height: 500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 header .container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+header .container .main-nav {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   flex-direction: row;
-}
-header nav {
   margin-top: 10px;
+  width: 100%;
+  color: #FFFFFF;
 }
-header nav a {
+header .container .main-nav nav {
+  margin-top: 30px;
+}
+header .container .main-nav nav a {
   margin-right: 10px;
   text-decoration: none;
+  color: #FFFFFF;
+  transition: all 0.3s;
 }
-header nav a:hover {
-  border-bottom: 1px solid #444545;
+header .container .main-nav nav a:hover {
+  color: #de9151;
+  border-bottom: 1px solid #de9151;
 }
-header .call-to-action {
-  margin-top: 6px;
+header .container .intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #FFFFFF;
+  height: 39vh;
+  text-align: center;
+  width: 100%;
+}
+header .container .intro h1 {
+  font-size: 4.6rem;
+  margin-bottom: 40px;
+}
+header .container .intro .buttons a {
   background: #00887A;
   border: 1px solid #FFFFFF;
   color: #FFFFFF;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  padding: 10px 45px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  padding: 10px 50px;
   text-decoration: none;
   text-align: center;
   font-size: 1.4rem;
   transition: all 0.3s;
-  padding: 10px 25px;
+  border: 1px solid #00887A;
+  margin: 0 5px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
-header .call-to-action:hover {
+header .container .intro .buttons a:hover {
   background: #FFFFFF;
   color: #00887A;
+  border: 1px solid #00887A;
+}
+header .container .intro .buttons .reverse-button {
+  background: #FFFFFF;
+  border: 1px solid #00887A;
+  color: #00887A;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  padding: 10px 50px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.4rem;
+  transition: all 0.3s;
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+}
+header .container .intro .buttons .reverse-button:hover {
+  background: #00887A;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+}
+header .container .intro .buttons .reverse-button:hover {
   border: 1px solid #00887A;
 }
 .footer {
@@ -262,63 +322,76 @@ header .call-to-action:hover {
 }
 .footer .container p {
   color: #FFFFFF;
+  margin-top: 7px;
+}
+.footer .container .social-medias {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
 }
 .footer .container .social-medias a {
   color: #FFFFFF;
   font-size: 1.8rem;
   margin-right: 10px;
 }
-.banner {
-  /* The image used */
-  background: linear-gradient(90deg, rgba(20, 20, 20, 0.8) 0%, rgba(0, 0, 0, 0.5)), url(/img/cover.jpg);
-  /* Set a specific height */
-  min-height: 500px;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.footer .container .social-medias img {
+  max-height: 35px;
 }
-.banner .container {
+.main-section .introduction {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  color: #FFFFFF;
-  height: 51.6vh;
-  text-align: center;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  margin-top: 40px;
+  padding: 60px 0;
+  border-bottom: 1px solid #ccc;
 }
-.banner .container h1 {
-  font-size: 4.6rem;
+.main-section .introduction .intro-boxes {
+  width: 48%;
 }
-.banner .container a {
+.main-section .introduction .intro-boxes p {
+  margin-bottom: 15px;
+}
+.main-section .introduction .intro-boxes a.donate {
   background: #00887A;
   border: 1px solid #FFFFFF;
   color: #FFFFFF;
   border-radius: 3px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
-  padding: 10px 45px;
+  padding: 10px 50px;
   text-decoration: none;
   text-align: center;
   font-size: 1.4rem;
   transition: all 0.3s;
+  border: 1px solid #00887A;
+  font-weight: bold;
+  text-transform: uppercase;
 }
-.banner .container a:hover {
+.main-section .introduction .intro-boxes a.donate:hover {
   background: #FFFFFF;
   color: #00887A;
   border: 1px solid #00887A;
+}
+.main-section .introduction .intro-boxes .image-border {
+  border: 10px solid #00887A;
+  background: #00887A;
+}
+.main-section .introduction .intro-boxes .image-border img {
+  margin-top: -40px;
 }
 .main-section .box-section {
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
   flex-direction: row;
+  flex-wrap: wrap;
   margin: 40px 0;
 }
 .main-section .box-section .box {
   width: 31.5%;
-  min-height: 200px;
+  margin-bottom: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -328,4 +401,32 @@ header .call-to-action:hover {
 .main-section .box-section .box i {
   font-size: 4.8rem;
   margin-bottom: 20px;
+  color: #de9151;
+}
+.team-profile {
+  margin-top: 80px;
+}
+.team-profile .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.team-profile .container .box {
+  width: 31.5%;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.team-profile .container .box .image-border {
+  border: 10px solid #00887A;
+  background: #00887A;
+  margin-bottom: 20px;
+}
+.team-profile .container .box .image-border img {
+  margin-top: -40px;
 }

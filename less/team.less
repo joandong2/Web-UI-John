@@ -1,0 +1,25 @@
+.team-profile {
+    margin-top: 80px; 
+
+    .container {
+        .flex(space-between);
+        flex-wrap: wrap;
+        
+        .box {
+            width: 31.5%;
+            margin-bottom: 30px;
+            .flex(center,center,column);
+            text-align: center;
+
+            .image-border {
+                border: 10px solid @teal-green;
+                background: @teal-green;
+                margin-bottom: 20px;
+
+                img {
+                    margin-top: -40px;
+                }
+            }
+        }
+    }
+}

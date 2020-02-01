@@ -1,29 +1,77 @@
 header {
     padding: 20px 0 10px;
+    //background-image: url("/img/cover.jpg");
+    //background:linear-gradient(0deg, rgba(91, 91, 91, 0.3), rgba(6, 6, 6, 0.5)), url(/img/cover.jpg);
+    background:linear-gradient(90deg, rgba(20, 20, 20, 0.8) 0%, rgba(0, 0, 0, 0.5)), url(/img/cover.jpg);
+
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     .container{
-        .flex(space-between);
-    }
+        .flex(@direction: column);
 
-    nav {
-        margin-top: 10px;
+        .main-nav {
+            .flex(space-between);
+            margin-top: 10px;
+            width: 100%;
+            color: @white;
+    
+            nav {
+                margin-top: 30px; 
 
-        a {
-            margin-right: 10px;
-            text-decoration: none;
-
-            &:hover {
-                border-bottom: 1px solid @outer-space;
-                //transition: all .2s;
+                a {
+                    margin-right: 10px;
+                    text-decoration: none;
+                    color: @white;
+                    transition: all .3s;
+        
+                    &:hover {
+                        color: @persian-orange;
+                        border-bottom: 1px solid @persian-orange;
+                    }
+                }
             }
         }
-    }
 
-    .call-to-action {
-        margin-top: 6px;
-        text-decoration: none;
-        .button(@teal-green, 5px, @white);
-        padding: 10px 25px;
+        .intro {
+            .flex(center, center, column);
+            color: @white;
+            height: 39vh;
+            text-align: center;
+            width: 100%;
+        
+            h1 {
+                font-size: 4.6rem;
+                margin-bottom: 40px;
+            }
+        
+            .buttons {
+                a {
+                    .button(@teal-green, 3px, @white);
+                    border: 1px solid @teal-green;
+                    margin: 0 5px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                }
+
+                .reverse-button {
+                    .button(@white, 3px, @teal-green);
+                    background: rgba(2255, 255, 255, 0.3);
+                    border: 1px solid @white;
+                    color: @white;
+
+                    &:hover {
+                        border: 1px solid @teal-green;
+                    }
+                }
+            }
+            
+        }
     }
-    
 }
