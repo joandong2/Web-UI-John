@@ -1,0 +1,52 @@
+.main-section {
+
+    .introduction {
+        .flex(space-between);
+        margin-top: 40px;
+        padding: 60px 0;
+        border-bottom :1px solid #ccc;
+ 
+        .intro-boxes {
+            width: 48%;
+
+            p {
+                margin-bottom: 15px;
+            }
+
+            a.donate {
+                .button(@teal-green, 3px, @white);
+                border: 1px solid @teal-green;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+
+            .image-border {
+                border: 10px solid @teal-green;
+                background: @teal-green;
+
+                img {
+                    margin-top: -40px;
+                }
+            }
+        }
+    }
+
+    .box-section {
+        .flex(space-evenly);
+        flex-wrap: wrap;
+        margin: 40px 0;
+        
+        .box {
+            width: 31.5%;
+            margin-bottom: 30px;
+            .flex(center,center,column);
+            text-align: center;
+
+            i {
+                font-size: 4.8rem;
+                margin-bottom: 20px;
+                color: @persian-orange;
+            }
+        }
+    }
+}
