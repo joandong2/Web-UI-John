@@ -278,16 +278,6 @@ header .container .intro {
   text-align: center;
   width: 100%;
 }
-@media (max-width: 500px) {
-  header .container .intro {
-    height: 75vh;
-  }
-}
-@media (max-width: 375px) {
-  header .container .intro {
-    height: 39vh;
-  }
-}
 header .container .intro h1 {
   font-size: 4.6rem;
   margin-bottom: 40px;
@@ -512,7 +502,7 @@ header .container .intro .buttons .reverse-button:hover {
   }
 }
 .team-profile .container .box {
-  width: 24.6%;
+  width: 23.6%;
   margin-bottom: 30px;
   display: flex;
   justify-content: center;
@@ -525,7 +515,7 @@ header .container .intro .buttons .reverse-button:hover {
     width: 32.333%;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 767px) {
   .team-profile .container .box {
     width: 48%;
   }
