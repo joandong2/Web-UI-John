@@ -7,11 +7,23 @@
     .introduction {
         .flex(space-between);
         margin-top: 40px;
-        padding: 60px 0;
+        padding: 40px 0;
         border-bottom :1px solid #ccc;
+
+        @media @mobile {
+            .flex(center, center, column);
+        }
  
         .intro-boxes {
             width: 48%;
+
+            @media @mobile {
+                width: 98%;
+            }
+
+            @media @s-mobile {
+                text-align: center;
+            }
 
             p {
                 margin-bottom: 15px;
@@ -27,6 +39,10 @@
             .image-border {
                 border: 10px solid @teal-green;
                 background: @teal-green;
+
+                @media @mobile {
+                    margin-bottom: 40px;
+                }
 
                 img {
                     margin-top: -40px;
@@ -45,6 +61,10 @@
             margin-bottom: 30px;
             .flex(center,center,column);
             text-align: center;
+
+            @media @s-mobile {
+                width: 48%;
+            }
 
             i {
                 font-size: 4.8rem;

@@ -21,9 +21,18 @@ header {
             margin-top: 10px;
             width: 100%;
             color: @white;
+
+            @media @s-mobile {
+                .flex(center, center, column);
+            }
     
             nav {
                 margin-top: 30px; 
+
+                @media @s-mobile {
+                    margin-top: 15px;
+                    margin-bottom: 20px;
+                }
 
                 a {
                     margin-right: 10px;
@@ -45,17 +54,34 @@ header {
             height: 39vh;
             text-align: center;
             width: 100%;
+
+            @media @mobile {
+                height: 75vh;
+            }
+
+            @media @s-mobile {
+                height: 39vh;
+            }
         
             h1 {
                 font-size: 4.6rem;
                 margin-bottom: 40px;
+
+                @media @s-mobile {
+                    font-size: 3.6rem;
+                }
             }
         
             .buttons {
+
+                @media @s-mobile {
+                    .flex(center, center, column);
+                }
+
                 a {
                     .button(@teal-green, 3px, @white);
                     border: 1px solid @teal-green;
-                    margin: 0 5px;
+                    margin: 0 5px 10px;
                     font-weight: bold;
                     text-transform: uppercase;
                 }

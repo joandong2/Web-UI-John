@@ -6,6 +6,10 @@
   .container {
     .flex(space-between);
 
+    @media @s-mobile {
+        .flex(center, center, column-reverse);
+    }
+
     p {
         color: @white;
         margin-top: 7px;

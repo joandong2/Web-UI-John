@@ -13,12 +13,28 @@
     .container {
         .flex(space-between);
         flex-wrap: wrap;
+
+        @media @s-mobile {
+            .flex(center, center);
+        }
         
         .box {
             width: 24.6%;
             margin-bottom: 30px;
             .flex(center,center,column);
             text-align: center;
+
+            @media @tablet {
+                width: 32.333%;
+            }
+
+            @media @mobile {
+                width: 48%;
+            }
+
+            @media @s-mobile {
+                width: 84%;
+            }
 
             p.name {
                 padding-bottom: 0;
@@ -38,6 +54,14 @@
                     max-height: 200px;
                     width: 100vh;
                     height: 100vh;
+
+                    @media @mobile {
+                        max-height: 160px;
+                    }
+
+                    @media @s-mobile {
+                        max-height: 200px;
+                    }
                 }
             }
         }
