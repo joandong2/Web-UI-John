@@ -215,6 +215,10 @@ img {
     padding: 0 20px;
   }
 }
+.headers {
+  text-align: center;
+  margin-bottom: 30px;
+}
 header {
   padding: 20px 0 10px;
   background: linear-gradient(90deg, rgba(20, 20, 20, 0.8) 0%, rgba(0, 0, 0, 0.5)), url(/img/cover.jpg);
@@ -383,16 +387,13 @@ header .container .intro .buttons .reverse-button:hover {
 .main-section h3 {
   color: #de9151;
 }
-.main-section h2 {
-  text-align: center;
-  margin-top: 30px;
-}
 .main-section .introduction {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   flex-direction: row;
   margin-top: 40px;
+  margin-bottom: 40px;
   padding: 40px 0;
   border-bottom: 1px solid #ccc;
 }
@@ -488,10 +489,6 @@ header .container .intro .buttons .reverse-button:hover {
 .team-profile h3 {
   color: #de9151;
 }
-.team-profile h1 {
-  text-align: center;
-  margin-bottom: 50px;
-}
 .team-profile .container {
   display: flex;
   justify-content: space-between;
@@ -528,7 +525,7 @@ header .container .intro .buttons .reverse-button:hover {
 }
 @media (max-width: 375px) {
   .team-profile .container .box {
-    width: 84%;
+    width: 70%;
   }
 }
 .team-profile .container .box p.name {
