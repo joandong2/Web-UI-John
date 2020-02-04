@@ -6,7 +6,7 @@
     }
 
     .container {
-        .flex(space-between);
+        .flex(flex-start);
         flex-wrap: wrap;
 
         @media @s-mobile {
@@ -14,21 +14,23 @@
         }
         
         .box {
-            width: 21.6%;
+            flex-basis: 25%;
+            padding: 10px;
             margin-bottom: 30px;
             .flex(center,center,column);
             text-align: center;
 
             @media @tablet {
-                width: 30.333%;
+                flex-basis: 33.333%;
             }
 
             @media @s-tablet {
-                width: 46%;
+                flex-basis: 50%;
             }
 
             @media @s-mobile {
-                width: 70%;
+                flex-basis: 80%;
+                margin-bottom: 10px;
             }
 
             p.name {

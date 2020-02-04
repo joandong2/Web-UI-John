@@ -219,6 +219,13 @@ img {
   text-align: center;
   margin-bottom: 30px;
 }
+.bold {
+  font-weight: 800;
+}
+.bold-italic {
+  font-weight: 800;
+  font-style: italic;
+}
 header {
   padding: 20px 0 10px;
   background: linear-gradient(90deg, rgba(20, 20, 20, 0.8) 0%, rgba(0, 0, 0, 0.5)), url(/img/cover.jpg);
@@ -378,6 +385,10 @@ header .container .intro .buttons .reverse-button:hover {
   color: #FFFFFF;
   font-size: 1.8rem;
   margin-right: 10px;
+  transition: 0.3s all;
+}
+.footer .container .social-medias a:hover {
+  color: #de9151;
 }
 .footer .container .social-medias img {
   max-height: 35px;
@@ -491,7 +502,7 @@ header .container .intro .buttons .reverse-button:hover {
 }
 .team-profile .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
   flex-direction: row;
   flex-wrap: wrap;
@@ -505,7 +516,8 @@ header .container .intro .buttons .reverse-button:hover {
   }
 }
 .team-profile .container .box {
-  width: 21.6%;
+  flex-basis: 25%;
+  padding: 10px;
   margin-bottom: 30px;
   display: flex;
   justify-content: center;
@@ -515,17 +527,18 @@ header .container .intro .buttons .reverse-button:hover {
 }
 @media (max-width: 1024px) {
   .team-profile .container .box {
-    width: 30.333%;
+    flex-basis: 33.333%;
   }
 }
 @media (max-width: 767px) {
   .team-profile .container .box {
-    width: 46%;
+    flex-basis: 50%;
   }
 }
 @media (max-width: 375px) {
   .team-profile .container .box {
-    width: 70%;
+    flex-basis: 80%;
+    margin-bottom: 10px;
   }
 }
 .team-profile .container .box p.name {
